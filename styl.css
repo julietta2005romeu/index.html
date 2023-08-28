@@ -91,11 +91,74 @@ a {
 }
 
 .serv {
-  width: 100%;
-  padding: 90px 0;
+  width: 800px;
+  height: 200px;
   background: white;
-  margin-top: 100px;
-  border-radius: 30px;
+  border-radius: 25px;
+  margin: 50px 0 0 0;
+  padding: 30px;
+}
+.serv a {
+  text-decoration: none;
+  color: #677071;
+  margin: 25px 0 0 35px;
+  font-size: 18px;
+}
+.serv a:hover {
+  font-size: 20px;
+  color: #021112;
+  border-bottom: 2px solid;
+}
+.linia {
+  border-bottom: 0.5px solid;
+  width: 100%;
+  color: #b2b5b4;
+  margin: 5px 0 15px 0;
+}
+
+.rodi {
+  display: flex;
+  gap: 90px;
+}
+
+.hh {
+  display: flex;
+  margin: 10px 0 0 0;
+  gap: 50px;
+}
+
+.h12 {
+  border-right: 2px solid;
+}
+
+.hh h3 {
+  font-size: 18px;
+}
+
+.btn {
+  width: 150px;
+  height: 50px;
+  background: #13a6ba;
+  color: white;
+  border: none;
+}
+.btn:hover {
+  width: 160px;
+  height: 60px;
+  background: #021112;
+}
+
+.icons {
+  display: flex;
+}
+.icons h6 {
+  font-size: 16px;
+  color: #677071;
+}
+
+.icons ion-icon:hover {
+  font-size: 18px;
+  color: aqua;
 }
 
 .hero-content img {
@@ -107,9 +170,6 @@ a {
     font-size: 60px;
     padding-top: 65px;
   }
-  .serv {
-    margin-top: 65px;
-  }
 }
 @media (max-width: 768px) {
   .titl h1 {
@@ -117,7 +177,20 @@ a {
     padding-top: 35px;
   }
   .serv {
-    margin-top: 35px;
+    padding: 25px;
+    margin: 20px 0 0 0;
+
+    width: 600px;
+  }
+  .serv {
+    width: 700px;
+  }
+  .serv a {
+    margin: 20px 0 0 20px;
+    font-size: 16px;
+  }
+  .icons h6 {
+    font-size: 13px;
   }
 }
 
@@ -127,23 +200,218 @@ a {
     padding-top: 25px;
   }
   .serv {
-    margin-top: 25px;
+    padding: 15px;
+    width: 400px;
+    height: 100px;
+  }
+  .rodi {
+    gap: 45px;
+  }
+  .hh {
+    display: flex;
+    /* flex-direction: column; */
+    margin: 0 0 0 0;
+    gap: 13px;
+  }
+  .btn {
+    width: 50px;
+    height: 20px;
+    font-size: 12px;
+    border-radius: 15px 15px 0 0;
+  }
+  .btn:hover {
+    width: 55px;
+    height: 23px;
+  }
+  .icons h6 {
+    font-size: 12px;
   }
   .titl p {
     padding-top: 10px;
+  }
+  .h12 {
+    border-right: none;
   }
 }
 
 @media (max-width: 320px) {
   .titl h1 {
-    font-size: 30px;
+    font-size: 25px;
     padding-top: 15px;
   }
 
   .serv {
-    margin-top: 15px;
+    padding: 10px;
+    width: 290px;
+    height: 200px;
+  }
+  .serv a {
+    font-size: 12px;
   }
   .titl p {
+    font-size: 15px;
     padding-top: 5px;
   }
+  .rodi {
+    display: flex;
+    gap: 15px;
+  }
+  .icons ion-icon {
+    font-size: 12px;
+  }
+  .icons h6 {
+    font-size: 12px;
+  }
+  .hh {
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+  }
+}
+
+#don {
+  margin: 100px 0 0 0;
+}
+
+.in {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  margin-top: -25px;
+}
+
+.bir-huina h1 {
+  font-family: Noto Serif;
+  font-size: 58px;
+  line-height: 105px;
+}
+.bir-huina p {
+  font-family: Noto Serif;
+  font-size: 18px;
+  color: #677071;
+}
+.block {
+  margin: 90px 0 0 0;
+  width: 300px;
+  height: 520px;
+  background: #f7f7f7;
+  border-radius: 25px;
+  padding: 20px;
+}
+.block:hover {
+  width: 305px;
+  height: 525px;
+  background: #13a6ba;
+}
+.block img {
+  width: 250px;
+  height: 290px;
+  border-radius: 15px 90px 15px 15px;
+  margin-bottom: 15px;
+}
+.block h4 {
+  font-size: 20px;
+  font-family: Noto Serif;
+}
+.block p {
+  font-size: 12px;
+  color: #677071;
+  margin-bottom: 15px;
+}
+.block h1 {
+  font-size: 35px;
+  margin-bottom: 10px;
+}
+.l {
+  border-right: 1px solid;
+  color: #a3a8a9;
+}
+.link {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+.link h6 {
+  color: #a3a8a9;
+}
+.but {
+  width: 260px;
+  height: 40px;
+  background: #ffffff;
+  color: black;
+  cursor: pointer;
+}
+.but:hover {
+  background: blue;
+  color: white;
+  width: 265px;
+  height: 42px;
+  border: none;
+}
+.content-block {
+  display: flex;
+  justify-content: space-around;
+}
+
+.ion {
+  margin-top: 20px;
+  display: flex;
+  justify-content: flex-end;
+  font-size: 35px;
+  gap: 15px;
+}
+
+.ion-1:hover {
+  background: #df02f8;
+  color: white;
+  border-radius: 15px 80px 10px 0;
+}
+.ion-2:hover {
+  background: #df02f8;
+  color: white;
+  border-radius: 80px 15px 10px 0;
+}
+@media (max-width: 768px) {
+  .bir-huina h1 {
+    font-size: 48px;
+    line-height: 95px;
+  }
+  .in {
+    gap: 8px;
+    margin-top: auto;
+  }
+  .content-block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .ion {
+    font-size: 25px;
+    gap: 10px;
+  }
+}
+@media (max-width: 480px) {
+  .bir-huina h1 {
+    font-size: 38px;
+    line-height: 55px;
+  }
+  .bir-huina p {
+    font-size: 12px;
+  }
+}
+@media (max-width: 320px) {
+  .bir-huina h1 {
+    font-size: 28px;
+    line-height: 35px;
+  }
+  .bir-huina p {
+    font-size: 10px;
+  }
+}
+.div-1 {
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  background: burlywood;
+  border-radius: 0 182pc 0 0;
 }
